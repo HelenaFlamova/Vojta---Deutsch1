@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pläne, Pflichten und Imperativ | Helena Speaking Labs</title>
+  <title>Pläne, Pflichten und Imperativ | Helena Mentoring</title>
   <style>
     :root{--red:#aa001a;--cream:#f2edec;--black:#171313;--white:#fff}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--black);font:16px/1.65 Arial,sans-serif}
     h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:400;line-height:1.12;margin-top:0}h1{font-size:clamp(3rem,8vw,6.5rem);max-width:900px;letter-spacing:-.05em}h2{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.035em}h3{font-size:1.35rem}
     button,input,select,textarea{font:inherit}button{border:1px solid var(--red);padding:.8rem 1.2rem;background:var(--red);color:var(--white);font-weight:700;cursor:pointer}button:hover{background:var(--black);border-color:var(--black)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:3px}
-    .hero{padding:6rem max(1.25rem,calc((100% - 1120px)/2));background:var(--black);color:var(--white)}.hero h1{color:var(--white)}.brand{font-family:"Lemon Tuesday","Segoe Script",cursive;font-size:1.6rem;margin-bottom:4rem}.eyebrow{color:var(--red);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero .eyebrow{color:var(--white)}.hero p{max-width:720px}.pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}.pill{border:1px solid var(--white);border-radius:99px;padding:.35rem .75rem;font-size:.75rem}
+    .hero{padding:6rem max(1.25rem,calc((100% - 1120px)/2));background:var(--cream);color:var(--red);border-bottom:1px solid var(--red)}.hero h1{color:var(--red)}.brand{font-family:"Lemon Tuesday","Segoe Script",cursive;font-size:1.6rem;margin-bottom:4rem;color:var(--red)}.eyebrow{color:var(--red);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero .eyebrow{color:var(--red)}.hero p{max-width:720px;color:var(--red)}.pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}.pill{border:1px solid var(--red);border-radius:99px;padding:.35rem .75rem;font-size:.75rem;color:var(--red);background:var(--white)}
     .progress{position:sticky;top:0;z-index:10;padding:.7rem max(1.25rem,calc((100% - 1120px)/2));background:var(--white);border-bottom:1px solid var(--cream)}.progress-row{display:flex;justify-content:space-between;font-size:.72rem;font-weight:700;text-transform:uppercase}.track{height:4px;background:var(--cream);margin-top:.35rem}.bar{height:100%;width:0;background:var(--red);transition:.3s}
     nav{display:grid;grid-template-columns:repeat(6,1fr);width:min(1120px,calc(100% - 2rem));margin:2rem auto;background:var(--white);border:1px solid var(--cream)}nav a{padding:1rem;color:var(--black);text-decoration:none;border-right:1px solid var(--cream);font-size:.72rem;font-weight:700;text-align:center}nav a:last-child{border:0}nav a:hover{color:var(--red)}
     main{width:min(1120px,calc(100% - 2rem));margin:auto;padding:4rem 0}section{margin-bottom:7rem;scroll-margin-top:6rem}.intro{max-width:760px;color:var(--black);opacity:.8}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.grid.two{grid-template-columns:repeat(2,1fr)}.card,.activity{background:var(--white);border:1px solid var(--cream);padding:1.5rem;box-shadow:0 18px 45px rgba(23,19,19,.07)}.card p:last-child{margin-bottom:0}.label{display:block;color:var(--red);font-size:.65rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.7rem}
     details{background:var(--white);border:1px solid var(--cream);margin:.55rem 0}summary{padding:1rem 1.2rem;cursor:pointer;font-family:"Playfair Display",Georgia,serif;font-size:1.15rem}details>div{padding:0 1.2rem 1.2rem}.vocab{display:grid;grid-template-columns:repeat(2,1fr);gap:.65rem}.vocab p{margin:.45rem 0;padding:.55rem .7rem;border-left:2px solid var(--red);background:var(--cream)}.vocab span{display:block;font-size:.82rem;opacity:.75}
     .table{width:100%;border-collapse:collapse;background:var(--white)}.table th,.table td{padding:.75rem;border:1px solid var(--cream);text-align:left}.table th{color:var(--red)}
-    .question{padding:1.3rem 0;border-bottom:1px solid var(--cream)}.question strong{display:block;margin-bottom:.8rem;font-family:"Playfair Display",Georgia,serif;font-size:1.12rem}.options{display:grid;gap:.5rem}.option{display:flex;gap:.6rem;padding:.7rem;border:1px solid var(--cream);cursor:pointer}.option:hover{background:var(--cream)}.option input{accent-color:var(--red)}.correct{background:var(--cream)!important;border-color:var(--black)!important}.incorrect{border-color:var(--red)!important}.feedback{display:none;margin-top:1rem;padding:1rem;border-left:3px solid var(--red);background:var(--cream);font-weight:700}.feedback.show{display:block}
+    .question{padding:1.3rem 0;border-bottom:1px solid var(--cream)}.question strong{display:block;margin-bottom:.8rem;font-family:"Playfair Display",Georgia,serif;font-size:1.12rem}.options{display:grid;gap:.5rem}.option{display:flex;gap:.6rem;padding:.7rem;border:1px solid var(--cream);cursor:pointer}.option:hover{background:var(--cream)}.option input{accent-color:var(--red)}.correct{background:var(--cream)!important;border-color:var(--black)!important}.incorrect{border-color:var(--red)!important}.feedback,.explanation{display:none;margin-top:1rem;padding:1rem;border-left:3px solid var(--red);background:var(--cream);font-weight:700}.feedback.show,.explanation.show{display:block}.explanation{font-weight:400}.explanation strong{display:inline;font-family:Arial,sans-serif;font-size:inherit}
     .fill{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;padding:1rem 0;border-bottom:1px solid var(--cream)}.fill input{min-width:150px;padding:.45rem;border:1px solid var(--black);background:var(--white)}.scenario{display:grid;grid-template-columns:1fr 240px;gap:1rem;align-items:center;padding:1rem 0;border-bottom:1px solid var(--cream)}select{padding:.55rem;border:1px solid var(--black);background:var(--white)}
     .task-tabs{display:flex;gap:.5rem;margin:1rem 0}.secondary{background:var(--white);color:var(--red)}.panel{display:none}.panel.active{display:block}textarea{width:100%;min-height:180px;padding:1rem;border:1px solid var(--black)}.checklist{display:grid;gap:.5rem;margin:1rem 0;padding:1rem;background:var(--cream)}.checklist label{display:flex;gap:.6rem}.result{text-align:center;padding:4rem;background:var(--red);color:var(--white)}.result h2{color:var(--white)}.score{font:5rem/1 "Playfair Display",Georgia,serif}
     @media(max-width:850px){.grid,.grid.two,.vocab{grid-template-columns:1fr}nav{grid-template-columns:repeat(2,1fr)}.scenario{grid-template-columns:1fr}}@media(max-width:560px){main{width:calc(100% - 1rem)}.hero{padding:4rem 1rem}.activity,.card{padding:1rem}.task-tabs button{width:100%}.task-tabs{display:grid}}
@@ -23,7 +23,7 @@
 </head>
 <body>
   <header class="hero">
-    <div class="brand">Helena Speaking Labs</div>
+    <div class="brand">Helena Mentoring</div>
     <p class="eyebrow">Interaktive Deutschlektion für Vojta</p>
     <h1>Pläne, Pflichten und klare Anweisungen</h1>
     <p>Sprich über Schule, Freizeit, vergangene Erlebnisse und zukünftige Pläne. Übe Modalverben und den Imperativ.</p>
@@ -78,15 +78,26 @@
         <div class="question" data-answer="b"><strong>Er sagt, ___ er Hunger hat.</strong><div class="options"><label class="option"><input type="radio" name="q4" value="a"> weil</label><label class="option"><input type="radio" name="q4" value="b"> dass</label><label class="option"><input type="radio" name="q4" value="c"> deshalb</label></div></div>
         <button class="check">Antworten prüfen</button><div class="feedback"></div>
       </article>
-      <article class="activity" data-num="2" data-type="fill" style="margin-top:2rem"><h3>2. Ergänze die richtige Form</h3>
-        <div class="fill">Ich <input data-answer="werde" aria-label="Antwort 1"> morgen lernen.</div><div class="fill">Wir <input data-answer="werden" aria-label="Antwort 2"> die Insekten beobachten.</div><div class="fill">Die Schüler <input data-answer="müssen" aria-label="Antwort 3"> lernen.</div><div class="fill">Du <input data-answer="darfst" aria-label="Antwort 4"> hier nicht kochen.</div><div class="fill">Mein bester Freund Ben war <input data-answer="dabei" aria-label="Antwort 5">.</div><div class="fill">Wir haben am Wochenende <input data-answer="geangelt" aria-label="Antwort 6">.</div>
+      <article class="activity" data-num="2" data-type="quiz" style="margin-top:2rem"><h3>2. Wähle den eindeutig passenden Satz</h3>
+        <div class="question" data-answer="b"><strong>Která věta přesně znamená: „Zítra se budu učit.“?</strong><div class="options"><label class="option"><input type="radio" name="u1" value="a"> Ich kann morgen lernen.</label><label class="option"><input type="radio" name="u1" value="b"> Ich werde morgen lernen.</label><label class="option"><input type="radio" name="u1" value="c"> Ich muss morgen lernen.</label></div></div>
+        <div class="question" data-answer="c"><strong>Která věta přesně znamená: „Budeme pozorovat hmyz.“?</strong><div class="options"><label class="option"><input type="radio" name="u2" value="a"> Wir wollen die Insekten beobachten.</label><label class="option"><input type="radio" name="u2" value="b"> Wir müssen die Insekten beobachten.</label><label class="option"><input type="radio" name="u2" value="c"> Wir werden die Insekten beobachten.</label></div></div>
+        <div class="question" data-answer="a"><strong>Která věta vyjadřuje nutnost: „Žáci se musí učit.“?</strong><div class="options"><label class="option"><input type="radio" name="u3" value="a"> Die Schüler müssen lernen.</label><label class="option"><input type="radio" name="u3" value="b"> Die Schüler können lernen.</label><label class="option"><input type="radio" name="u3" value="c"> Die Schüler wollen lernen.</label></div></div>
+        <div class="question" data-answer="b"><strong>Která věta přesně znamená: „Tady nesmíš vařit.“?</strong><div class="options"><label class="option"><input type="radio" name="u4" value="a"> Du musst hier nicht kochen.</label><label class="option"><input type="radio" name="u4" value="b"> Du darfst hier nicht kochen.</label><label class="option"><input type="radio" name="u4" value="c"> Du willst hier nicht kochen.</label></div></div>
+        <div class="question" data-answer="c"><strong>Která věta přesně znamená: „Můj nejlepší kamarád Ben byl při tom.“?</strong><div class="options"><label class="option"><input type="radio" name="u5" value="a"> Mein bester Freund Ben war krank.</label><label class="option"><input type="radio" name="u5" value="b"> Mein bester Freund Ben war zu Hause.</label><label class="option"><input type="radio" name="u5" value="c"> Mein bester Freund Ben war dabei.</label></div></div>
+        <div class="question" data-answer="a"><strong>Která věta přesně znamená: „O víkendu jsme chytali ryby.“?</strong><div class="options"><label class="option"><input type="radio" name="u6" value="a"> Wir haben am Wochenende geangelt.</label><label class="option"><input type="radio" name="u6" value="b"> Wir haben am Wochenende gemacht.</label><label class="option"><input type="radio" name="u6" value="c"> Wir werden am Wochenende angeln.</label></div></div>
         <button class="check">Antworten prüfen</button><div class="feedback"></div>
       </article>
       <article class="activity" data-num="3" data-type="select" style="margin-top:2rem"><h3>3. Wähle den passenden Imperativ</h3>
-        <div class="scenario" data-answer="Komm her!"><span>Du sprichst mit einem Freund: kommen</span><select><option value="">Wähle</option><option>Komm her!</option><option>Kommt her!</option><option>Kommen Sie her!</option></select></div>
-        <div class="scenario" data-answer="Hört mir zu!"><span>Du sprichst mit mehreren Freunden: zuhören</span><select><option value="">Wähle</option><option>Hör mir zu!</option><option>Hört mir zu!</option><option>Hören Sie mir zu!</option></select></div>
-        <div class="scenario" data-answer="Passen Sie auf!"><span>Du sprichst höflich mit Frau Müller: aufpassen</span><select><option value="">Wähle</option><option>Pass auf!</option><option>Passt auf!</option><option>Passen Sie auf!</option></select></div>
-        <div class="scenario" data-answer="Öffnet das Fenster!"><span>Du sprichst mit Kindern: das Fenster öffnen</span><select><option value="">Wähle</option><option>Öffne das Fenster!</option><option>Öffnet das Fenster!</option><option>Öffnen Sie das Fenster!</option></select></div>
+        <div class="scenario" data-answer="Komm her!" data-explanation="Du sprichst mit einer Person informell. Beim Imperativ mit du fällt das Pronomen weg: Komm her!"><span>Du sprichst mit einem Freund: kommen</span><select><option value="">Wähle</option><option>Komm her!</option><option>Kommt her!</option><option>Kommen Sie her!</option></select></div>
+        <div class="scenario" data-answer="Hört mir zu!" data-explanation="mehrere Freunde = ihr. Der ihr-Imperativ entspricht der Verbform ihr hört, aber ohne ihr: Hört mir zu!"><span>Du sprichst mit mehreren Freunden: zuhören</span><select><option value="">Wähle</option><option>Hör mir zu!</option><option>Hört mir zu!</option><option>Hören Sie mir zu!</option></select></div>
+        <div class="scenario" data-answer="Passen Sie auf!" data-explanation="Bei der höflichen Anrede benutzt man Infinitiv + Sie: Passen Sie auf!"><span>Du sprichst höflich mit Frau Müller: aufpassen</span><select><option value="">Wähle</option><option>Pass auf!</option><option>Passt auf!</option><option>Passen Sie auf!</option></select></div>
+        <div class="scenario" data-answer="Öffnet das Fenster!" data-explanation="Kinder sind mehrere Personen, also benutzt man den ihr-Imperativ: Öffnet das Fenster!"><span>Du sprichst mit Kindern: das Fenster öffnen</span><select><option value="">Wähle</option><option>Öffne das Fenster!</option><option>Öffnet das Fenster!</option><option>Öffnen Sie das Fenster!</option></select></div>
+        <div class="scenario" data-answer="Beruhige dich!" data-explanation="Du sprichst mit einer Person informell. Beim reflexiven Verb bleibt dich erhalten: Beruhige dich!"><span>Du sprichst mit einem Freund: sich beruhigen</span><select><option value="">Wähle</option><option>Beruhige dich!</option><option>Beruhigt euch!</option><option>Beruhigen Sie sich!</option></select></div>
+        <div class="scenario" data-answer="Geht schlafen!" data-explanation="Du sprichst mit mehreren Kindern, deshalb benutzt du die ihr-Form: Geht schlafen!"><span>Du sprichst mit mehreren Kindern: schlafen gehen</span><select><option value="">Wähle</option><option>Geh schlafen!</option><option>Geht schlafen!</option><option>Gehen Sie schlafen!</option></select></div>
+        <div class="scenario" data-answer="Baden Sie im Meer!" data-explanation="Frau Müller wird höflich mit Sie angesprochen: Baden Sie im Meer!"><span>Du sprichst höflich mit Frau Müller: im Meer baden</span><select><option value="">Wähle</option><option>Bade im Meer!</option><option>Badet im Meer!</option><option>Baden Sie im Meer!</option></select></div>
+        <div class="scenario" data-answer="Arbeite schnell!" data-explanation="Du sprichst mit einer Person informell. Der du-Imperativ von arbeiten lautet Arbeite!"><span>Du sprichst mit einem Freund: schnell arbeiten</span><select><option value="">Wähle</option><option>Arbeite schnell!</option><option>Arbeitet schnell!</option><option>Arbeiten Sie schnell!</option></select></div>
+        <div class="scenario" data-answer="Antwortet schnell!" data-explanation="Mehrere Kinder werden mit ihr angesprochen: Antwortet schnell!"><span>Du sprichst mit mehreren Kindern: schnell antworten</span><select><option value="">Wähle</option><option>Antworte schnell!</option><option>Antwortet schnell!</option><option>Antworten Sie schnell!</option></select></div>
+        <div class="scenario" data-answer="Hören Sie mir zu!" data-explanation="Bei einer höflichen Aufforderung steht das Verb zuerst und Sie direkt danach: Hören Sie mir zu!"><span>Du sprichst höflich mit einer unbekannten Person: zuhören</span><select><option value="">Wähle</option><option>Hör mir zu!</option><option>Hört mir zu!</option><option>Hören Sie mir zu!</option></select></div>
         <button class="check">Antworten prüfen</button><div class="feedback"></div>
       </article>
       <article class="activity" data-num="4" data-type="quiz" style="margin-top:2rem"><h3>4. Alltag, Vergangenheit und Pläne</h3>
@@ -101,17 +112,121 @@
     <section id="ergebnis" class="result"><p class="eyebrow" style="color:white">Ergebnis</p><h2>Dein Fortschritt</h2><div class="score" id="score">0%</div><p id="resultText">Bearbeite die Aktivitäten.</p><button id="reset">Neu starten</button></section>
   </main>
   <script>
-    document.addEventListener("DOMContentLoaded",function(){
-      const done={},scores={},total=5,$=s=>document.querySelector(s),all=s=>document.querySelectorAll(s);
-      function norm(v){return String(v||"").trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
-      function update(){const n=Object.keys(done).length,p=Math.round(n/total*100),vals=Object.values(scores),sc=vals.length?Math.round(vals.reduce((a,b)=>a+b,0)/vals.length):0;$("#progressText").textContent=n+" / "+total+" Aktivitäten";$("#progressBar").style.width=p+"%";$("#score").textContent=sc+"%";$("#resultText").textContent=n===total?"Sehr gut, Vojta! Du hast die Lektion abgeschlossen.":"Bearbeite die Aktivitäten."}
-      function feedback(a,c,t){const f=a.querySelector(".feedback"),n=a.dataset.num;f.className="feedback show";f.textContent=c+" von "+t+" Antworten sind richtig.";done[n]=1;scores[n]=Math.round(c/t*100);update()}
-      document.addEventListener("click",function(e){
-        const b=e.target.closest(".check");if(b){e.preventDefault();const a=b.closest(".activity"),type=a.dataset.type;if(type==="quiz"){let c=0,qs=a.querySelectorAll(".question");qs.forEach(q=>{q.querySelectorAll(".option").forEach(o=>o.classList.remove("correct","incorrect"));const sel=q.querySelector("input:checked"),ans=q.dataset.answer,good=q.querySelector('input[value="'+ans+'"]');if(sel&&sel.value===ans){c++;sel.closest(".option").classList.add("correct")}else{if(sel)sel.closest(".option").classList.add("incorrect");if(good)good.closest(".option").classList.add("correct")}});feedback(a,c,qs.length)}if(type==="fill"){let c=0,ins=a.querySelectorAll("input[data-answer]");ins.forEach(i=>{i.classList.remove("correct","incorrect");if(norm(i.value)===norm(i.dataset.answer)){c++;i.classList.add("correct")}else{i.classList.add("incorrect");i.placeholder=i.dataset.answer}});feedback(a,c,ins.length)}if(type==="select"){let c=0,ss=a.querySelectorAll(".scenario");ss.forEach(s=>{const x=s.querySelector("select");x.classList.remove("correct","incorrect");if(x.value===s.dataset.answer){c++;x.classList.add("correct")}else{x.classList.add("incorrect")}});feedback(a,c,ss.length)}}
-        const tab=e.target.closest("[data-panel]");if(tab){all(".panel").forEach(p=>p.classList.remove("active"));$("#"+tab.dataset.panel).classList.add("active")}
-        const fin=e.target.closest(".finish");if(fin){const a=fin.closest(".activity"),cs=a.querySelectorAll(".checklist input"),n=a.querySelectorAll(".checklist input:checked").length;feedback(a,n,cs.length)}
-        if(e.target.closest("#reset")){location.reload()}
-      });update()
+    document.addEventListener("DOMContentLoaded", function () {
+      const done = {}, scores = {}, total = 5;
+      const $ = selector => document.querySelector(selector);
+      const all = selector => document.querySelectorAll(selector);
+      const quizExplanations = [
+        "Bei einem Modalverb steht das konjugierte Verb an Position 2 und der Infinitiv am Satzende: Die Schüler müssen in der Schule lernen.",
+        "dürfen drückt eine Erlaubnis aus. müssen bedeutet Notwendigkeit, sollen bedeutet Auftrag oder Empfehlung.",
+        "Für ich lautet die höfliche Wunschform ich möchte. möchten und möchtet gehören zu anderen Personen.",
+        "Nach sagen kann ein Nebensatz mit dass folgen. Im dass-Satz steht das konjugierte Verb am Ende: dass er Hunger hat.",
+        "werden + Infinitiv vyjadřuje budoucnost: Ich werde morgen lernen. kann znamená mohu a muss znamená musím.",
+        "Budoucnost pro wir tvoříme pomocí werden + infinitiv: Wir werden die Insekten beobachten. wollen znamená chceme, müssen znamená musíme.",
+        "müssen vyjadřuje nutnost nebo povinnost. können znamená moci a wollen znamená chtít.",
+        "dürfen + nicht vyjadřuje zákaz: nesmíš. müssen + nicht znamená nemusíš.",
+        "dabei sein znamená být při tom nebo účastnit se. krank znamená nemocný a zu Hause znamená doma.",
+        "Perfekt slovesa angeln se tvoří haben + geangelt. werden angeln je budoucnost a gemacht znamená dělali.",
+        "Für ich lautet die Form von werden: ich werde. Der Infinitiv lernen steht am Satzende.",
+        "haben + geangelt ist Perfekt und beschreibt die Vergangenheit. werden angeln beschreibt die Zukunft.",
+        "Im Hauptsatz steht das konjugierte Verb an Position 2. Bei fernsehen steht fern am Satzende: Johanna sieht gern fern."
+      ];
+
+      function update() {
+        const count = Object.keys(done).length;
+        const values = Object.values(scores);
+        const score = values.length ? Math.round(values.reduce((a, b) => a + b, 0) / values.length) : 0;
+        $("#progressText").textContent = count + " / " + total + " Aktivitäten";
+        $("#progressBar").style.width = Math.round(count / total * 100) + "%";
+        $("#score").textContent = score + "%";
+        $("#resultText").textContent = count === total ? "Sehr gut, Vojta! Du hast die Lektion abgeschlossen." : "Bearbeite die Aktivitäten.";
+      }
+
+      function activityFeedback(activity, correct, totalAnswers) {
+        const feedback = activity.querySelector(".feedback");
+        feedback.className = "feedback show";
+        feedback.textContent = correct + " von " + totalAnswers + " Antworten sind richtig.";
+        done[activity.dataset.num] = true;
+        scores[activity.dataset.num] = Math.round(correct / totalAnswers * 100);
+        update();
+      }
+
+      function showExplanation(item) {
+        let explanation = item.querySelector(".explanation");
+        if (!explanation) {
+          explanation = document.createElement("div");
+          explanation.className = "explanation";
+          item.appendChild(explanation);
+        }
+        explanation.innerHTML = "<strong>Warum?</strong> " + item.dataset.explanation;
+        explanation.classList.add("show");
+      }
+
+      document.addEventListener("click", function (event) {
+        const checkButton = event.target.closest(".check");
+        if (checkButton) {
+          event.preventDefault();
+          const activity = checkButton.closest(".activity");
+          const type = activity.dataset.type;
+
+          if (type === "quiz") {
+            let correct = 0;
+            const questions = activity.querySelectorAll(".question");
+            questions.forEach(question => {
+              question.querySelectorAll(".option").forEach(option => option.classList.remove("correct", "incorrect"));
+              const selected = question.querySelector("input:checked");
+              const answer = question.dataset.answer;
+              const correctInput = question.querySelector('input[value="' + answer + '"]');
+              if (selected && selected.value === answer) {
+                correct++;
+                selected.closest(".option").classList.add("correct");
+              } else {
+                if (selected) selected.closest(".option").classList.add("incorrect");
+                if (correctInput) correctInput.closest(".option").classList.add("correct");
+              }
+              const globalIndex = Array.from(all(".question")).indexOf(question);
+              question.dataset.explanation = quizExplanations[globalIndex];
+              showExplanation(question);
+            });
+            activityFeedback(activity, correct, questions.length);
+          }
+
+          if (type === "select") {
+            let correct = 0;
+            const scenarios = activity.querySelectorAll(".scenario");
+            scenarios.forEach(scenario => {
+              const select = scenario.querySelector("select");
+              select.classList.remove("correct", "incorrect");
+              if (select.value === scenario.dataset.answer) {
+                correct++;
+                select.classList.add("correct");
+              } else {
+                select.classList.add("incorrect");
+              }
+              showExplanation(scenario);
+            });
+            activityFeedback(activity, correct, scenarios.length);
+          }
+        }
+
+        const tab = event.target.closest("[data-panel]");
+        if (tab) {
+          all(".panel").forEach(panel => panel.classList.remove("active"));
+          $("#" + tab.dataset.panel).classList.add("active");
+        }
+
+        const finish = event.target.closest(".finish");
+        if (finish) {
+          const activity = finish.closest(".activity");
+          const checks = activity.querySelectorAll(".checklist input");
+          const checked = activity.querySelectorAll(".checklist input:checked").length;
+          activityFeedback(activity, checked, checks.length);
+        }
+
+        if (event.target.closest("#reset")) location.reload();
+      });
+
+      update();
     });
   </script>
 </body>
